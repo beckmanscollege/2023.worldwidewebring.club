@@ -8,6 +8,29 @@
 
     <style>
 
+
+    :root {
+      --one: black;
+      --two: blue;
+      --three: #ccc;
+    }
+
+    a {
+      color: var(--two);
+    }
+
+    a:visited {
+      color: var(--three);
+      -webkit-text-stroke: 1.5px var(--two);
+      text-stroke: 1.5px var(--two);
+    }
+
+    a:hover {
+      color: var(--one);
+      -webkit-text-stroke: 1.5px var(--two);
+      text-stroke: 1.5px var(--two);
+    }
+
     body {
       margin: 0;
       padding: 0;
@@ -15,7 +38,6 @@
     }
 
     html {
-
     }
 
     @font-face {
@@ -23,33 +45,53 @@
     src: url("assets/188Sans-Pixel100.woff2") format("woff2");
     }
 
+    @font-face {
+    font-family: "dynamo";
+    src: url("assets/110E8D_0.woff") format("woff");
+    }
+
+    @font-face {
+    font-family: "ginto";
+    src: url("assets/ginto-normal-light.woff") format("woff");
+    }
+
+    @font-face {
+    font-family: "korv";
+    src: url("assets/korv.woff2") format("woff2");
+    }
+
 
     #wrapper {
-      background-image: url("assets/2023-worldwidewebringclub2.gif");
+      background-image: url("assets/sky-animation-3d-model_DHQ.jpg");
       padding: 0;
       display: flex;
       min-height: 100vh;
       background-attachment: fixed;
-      background-size: 100px;
+      background-size: 400px;
+      justify-content: center;
+      flex-flow: column;
       }
 
     h1 {
-      padding: 3vw 0;
+      padding: 3vw 0 5vw 0;
+      font-family: "korv";
       margin: 0;
       font-size: 7vw;
       text-align: center;
       height: 7vw;
-      color: #ccc;
-      -webkit-text-stroke: 1px black;
-      text-stroke: 1px black;
-      text-shadow: 0px 0px 10px rgba(0, 0, 255, 0.9);
-    }
+      color: var(--two);
+      -webkit-text-stroke: 0.1px var(--one);
+      text-stroke: 0.1px var(--one);
+      text-shadow:
+      -2px 2px 0px rgba(0, 0, 0, 0.3),
+      2px -2px 0 rgba(255, 255, 255, 0.5);
+      letter-spacing: -1px;
+      }
 
     ul {
       padding: 0;
       margin: 0;
       backdrop-filter: blur(10px);
-
     }
 
    li {
@@ -59,90 +101,222 @@
       list-style: none;
       text-align: center;
       padding: 0;
-      margin: 0;
+      margin: 0.25em 0;
     }
 
     #content {
-      flex-direction: column;
     }
 
-    a {
-      color: blue;
-    }
 
-    a:visited {
-      color: purple;
-    }
-
-    p {
-       font-size: 2vw;
-       line-height: 1.3em;
-       font-family: pixel;
+    p{
+       font-size: 3vw;
+       line-height: 1em;
+       font-family: korv;
        font-weight: normal;
+       color: var(--two);
+       -webkit-text-stroke: 1.5px var(--one);
+       text-stroke: 1.5px var(--one);
+       text-shadow:
+       -2px 2px 0px rgba(0, 0, 0, 0.3),
+       2px -2px 0 rgba(255, 255, 255, 0.5);
+       letter-spacing: -1px;
+     }
+
+     .by {
      }
 
      #footer {
-       align-self: flex-end;
-       padding: 3vw;
+       padding: 1vw 3vw;
      }
 
+     .tiktok {
+       border: 3px solid red;
+       padding: 0.5em;
+       display: none;
+     }
+
+    .tiktok a {
+      border: 3px solid blue;
+    }
+
+    hr {
+      height: 1vw;
+    }
+
+    .snurr {
+      width: 23vw;
+      border-radius: 50%;
+      border: 10px groove var(--two);
+    }
+
+    .snurran {
+      text-align: center;
+    }
+
+    .donut img {
+      position: fixed;
+      top: -10vw;
+      left: -10vw;
+      z-index: 10000;
+      width: 30vw;
+    }
+
+
+
+
+     @media screen and (max-width: 800px) {
+       body {
+       }
+
+       li {
+          font-size: 5vw;
+            }
+     }
 
 
     </style>
 
-  <body>
+<body>
+
+  <div class="donut">
+    <img src="assets/3dgifmaker25712.gif">
+  </div>
+
 
 <div id="wrapper">
 
-<div id="content">
-
+  <div id="header">
     <h1>
       2023.worldwidewebring.club
     </h1>
+  </div>
+
+  <div id="content">
+
+      <ul>
+        <hr></hr>
+
+      <li>
+        <a href="https://acceptcookies.site">acceptcookies.site</a><br>
+        <span class="by">by</span>
+        <span class="name">Lina Sundkvist Strindberg</span>
+        <a href="#" class="tiktok">🤳</a>
+      </li>
+
+      <li>
+        <a href="https://br3akthe1nter.net">br3akthe1nter.net</a><br>
+        <span class="by">by</span>
+        Tiffany Louise Hoff
+        <a href="#" class="tiktok">🤳</a>
+      </li>
+
+      <li>
+        <a href="https://can-you-hear.me">can-you-hear.me</a><br>
+        <span class="by">by</span>
+        Maja Ringsäter
+        <a href="#" class="tiktok">🤳</a>
+      </li>
+
+      <li>
+        <a href="https://clicktosubm.it">clicktosubm.it</a><br>
+        <span class="by">by</span>  Måns Horning
+        <a href="#" class="tiktok">🤳</a>
+      </li>
+
+      <li>
+        <a href="https://Deathbyfentanyl.com">Deathbyfentanyl.com</a><br>
+        <span class="by">by</span>
+        Nayra Aly
+        <a href="#" class="tiktok">🤳</a>
+      </li>
+
+      <li><a href="https://FurryFashionista.style">FurryFashionista.style</a><br>
+        <span class="by">by</span>
+        Amanda Artberger
+        <a href="#" class="tiktok">🤳</a>
+      </li>
+
+      <li><a href="https://goodtimes.computer">goodtimes.computer</a><br>
+        <span class="by">by</span>
+        Andy Voitka
+        <a href="#" class="tiktok">🤳</a>
+      </li>
+
+      <li><a href="https://identity.rodeo">identity.rodeo</a><br>
+        <span class="by">by</span>
+        Adam Arinbjarnarson
+        <a href="#" class="tiktok">🤳</a>
+      </li>
+
+      <li><a href="https://insta-killer.click">insta-killer.click</a><br>
+        <span class="by">by</span>  Jonatan Modin
+        <a href="#" class="tiktok">🤳</a>
+      </li>
+
+      <li><a href="https://lovelovelovelovelovelovelovelovelovelovelovelove-love-love-love.me">
+        lovelovelovelovelovelovelovelove<br>
+        lovelovelovelove-love-love-love.me</a>
+       <br>
+       <span class="by">by</span>  Sofia Di Marco
+       <a href="#" class="tiktok">🤳</a>
+     </li>
+
+      <li><a href="https://metaverse-room.tv">metaverse-room.tv</a><br> <span class="by">by</span>
+        Elvin Odelholm
+        <a href="#" class="tiktok">🤳</a>
+      </li>
+      <li><a href="https://microwa.it">microwa.it</a><br> <span class="by">by</span>
+        Solvej Jansson
+        <a href="#" class="tiktok">🤳</a>
+      </li>
+      <li><a href="https://nakedtruth.exposed">nakedtruth.exposed</a><br> <span class="by">by</span>
+        Emilia Lind
+        <a href="#" class="tiktok">🤳</a>
+      </li>
+      <li>
+        <a href="https://radio.stund.nu">radio.stund.nu</a><br> <span class="by">by</span>
+        Frank Torsson Szyber</li>
+
+      <li><a href="https://the-kingdom-made-of-co.de">the-kingdom-made-of-co.de</a><br>
+        <span class="by">by</span>
+        Gabriella Roos Redemo
+        <a href="#" class="tiktok">🤳</a>
+      </li>
+
+      <li><a href="https://www.thethreeeyes.com/">thethreeeyes.com</a><br>
+        <span class="by">by</span>
+        Noah Constantinou
+        <a href="#" class="tiktok">🤳</a>
+      </li>
+
+      <hr>
+
+      </ul>
+    </div>
+
+    <div id="footer">
+
+      <p>
+      16 Single Serving Sites by  the first year students at <a href="https://www.beckmans.se">Beckmans Collage of Design</a>,
+      based on Wikipedia articles linking to its <a href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Social_media">Social Media</a> page. The SSS:s are made in the <i>Interactive Design 1</i> course,
+      supervised by senior lecturer <a href="https://harald.peter.stream">Peter Ström</a>.
+      </p>
+
+      <hr>
+
+    </div>
 
 
-    <ul>
+    <div id="snurran">
+      <center>
+      <img src="assets/3dgifmaker87412.gif" class="snurr">
+    </center>
+    </div>
 
-      <hr></hr>
-
-    <li><a href="https://acceptcookies.site">acceptcookies.site</a> by Lina Sundkvist Strindberg</li>
-    <li><a href="https://br3akthe1nter.net">br3akthe1nter.net</a> by TIFFANY LOUISE HOFF</li>
-    <li><a href="https://can-you-hear.me">can-you-hear.me</a> by Maja Ringsäter</li>
-    <li><a href="https://clicktosubm.it">clicktosubm.it</a> by Måns Horning</li>
-    <li><a href="https://Deathbyfentanyl.com">Deathbyfentanyl.com</a> by Nayra Aly</li>
-    <li><a href="https://FurryFashionista.style">FurryFashionista.style</a> by Amanda Artberger</li>
-    <li><a href="https://goodtimes.computer">goodtimes.computer</a> by Andy Voitka</li>
-    <li><a href="https://identity.rodeo">identity.rodeo</a> by 𝒶𝒹𝒶𝓂 𝒶𝓇𝒾𝓃𝒷𝒿𝒶𝓇𝓃𝒶𝓇𝓈𝑜𝓃</li>
-    <li><a href="https://insta-killer.click">insta-killer.click</a> by JONATAN MODIN</li>
-    <li><a href="https://lovelovelovelovelovelovelovelovelovelovelovelove-love-love-love.me">
-      lovelovelovelovelovelovelovelove<br>
-      lovelovelovelove-love-love-love.me</a>
-      by Sofia Di Marco</li>
-    <li><a href="https://metaverse-room.tv">metaverse-room.tv</a> by elvin odelholm</li>
-    <li><a href="https://microwa.it">microwa.it</a> by Solvej Jansson</li>
-    <li><a href="https://nakedtruth.exposed">nakedtruth.exposed</a> by Emilia Lind</li>
-    <li><a href="https://stund.nu">stund.nu</a> by Frank Torsson Szyber</li>
-    <li><a href="https://the-kingdom-made-of-co.de">the-kingdom-made-of-co.de</a> by Gabriella Roos Redemo</li>
-    <li><a href="https://www.thethreeeyes.com/">thethreeeyes.com</a> by noah constantinou</li>
-    </ul>
-
-    <hr>
-
-<div id="footer">
-
-  <p>
-  16 single serving sites by the first year students at <a href="https://www.beckmans.se">Beckmans Collage of Design</a>,
-  based on articles relating to <a href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Social_media">Social media on Wikipedia</a>. Made in a course on interactive Design
-  superwised by senior lecturer <a href="https://harald.peter.stream">Peter Ström</a>.
-</p>
 
 </div>
 
-
-</div>
-</div>
-
-  </body>
+</body>
 
 
 
