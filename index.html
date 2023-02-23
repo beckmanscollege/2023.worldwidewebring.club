@@ -17,18 +17,19 @@
 
     a {
       color: var(--two);
-    }
+      text-decoration: none;
+        }
 
     a:visited {
       color: var(--three);
-      -webkit-text-stroke: 1.5px var(--two);
-      text-stroke: 1.5px var(--two);
+      -webkit-text-stroke: 1.5px var(--one);
+      text-stroke: 1.5px var(--one);
     }
 
     a:hover {
-      color: var(--one);
-      -webkit-text-stroke: 1.5px var(--two);
-      text-stroke: 1.5px var(--two);
+      color: var(--two);
+      -webkit-text-stroke: 1.5px var(--one);
+      text-stroke: 1.5px var(--one);
     }
 
     body {
@@ -45,15 +46,6 @@
     src: url("assets/188Sans-Pixel100.woff2") format("woff2");
     }
 
-    @font-face {
-    font-family: "dynamo";
-    src: url("assets/110E8D_0.woff") format("woff");
-    }
-
-    @font-face {
-    font-family: "ginto";
-    src: url("assets/ginto-normal-light.woff") format("woff");
-    }
 
     @font-face {
     font-family: "korv";
@@ -119,7 +111,15 @@
        text-shadow:
        -2px 2px 0px rgba(0, 0, 0, 0.3),
        2px -2px 0 rgba(255, 255, 255, 0.5);
-       letter-spacing: -1px;
+       letter-spacing: -0.1vw;
+       padding: 0;
+       margin: 0;
+     }
+
+     i {
+       font-weight: normal;
+       font-style: normal;
+       letter-spacing: 0.1em;
      }
 
      .by {
@@ -130,13 +130,19 @@
      }
 
      .tiktok {
-       border: 3px solid red;
        padding: 0.5em;
-       display: none;
-     }
+s     }
 
-    .tiktok a {
-      border: 3px solid blue;
+    a.tiktok  {
+      text-decoration: none;
+      border: 0;
+    }
+
+    a:hover.tiktok  {
+      text-decoration: none;
+      border: 0;
+      background-color: var(--two);
+      border-radius: 50%;
     }
 
     hr {
@@ -168,9 +174,36 @@
        body {
        }
 
-       li {
-          font-size: 5vw;
-            }
+      li {
+      font-size: 5vw;
+      }
+
+      h1 {
+        font-size: 6.5vw;
+      }
+
+
+      p{
+      font-size: 5.5vw;
+      letter-spacing: -0.4px;
+      }
+
+
+      .donut img {
+        position: fixed;
+        top: -30vw;
+        left: -30vw;
+        z-index: 10000;
+        width: 100vw;
+      }
+
+
+      #wrapper {
+        background-size: 40vw;
+        }
+
+
+
      }
 
 
@@ -200,93 +233,104 @@
         <a href="https://acceptcookies.site">acceptcookies.site</a><br>
         <span class="by">by</span>
         <span class="name">Lina Sundkvist Strindberg</span>
-        <a href="#" class="tiktok">🤳</a>
+        <a href="https://www.tiktok.com/@beckmanscollegeofdesign/video/7203311911063096581" class="tiktok">🤳</a>
       </li>
 
       <li>
         <a href="https://br3akthe1nter.net">br3akthe1nter.net</a><br>
         <span class="by">by</span>
         Tiffany Louise Hoff
-        <a href="#" class="tiktok">🤳</a>
+        <a href="https://www.tiktok.com/@beckmanscollegeofdesign/video/7203298741112147206" class="tiktok">🤳</a>
       </li>
 
       <li>
         <a href="https://can-you-hear.me">can-you-hear.me</a><br>
         <span class="by">by</span>
         Maja Ringsäter
-        <a href="#" class="tiktok">🤳</a>
+        <!--<a href="#" class="tiktok">🤳</a>-->
       </li>
 
       <li>
         <a href="https://clicktosubm.it">clicktosubm.it</a><br>
         <span class="by">by</span>  Måns Horning
-        <a href="#" class="tiktok">🤳</a>
+        <a href="https://vm.tiktok.com/ZMYAYv5jK/" class="tiktok">🤳</a>
       </li>
 
       <li>
         <a href="https://Deathbyfentanyl.com">Deathbyfentanyl.com</a><br>
         <span class="by">by</span>
         Nayra Aly
-        <a href="#" class="tiktok">🤳</a>
+        <!--<a href="#" class="tiktok">🤳</a>-->
       </li>
 
       <li><a href="https://FurryFashionista.style">FurryFashionista.style</a><br>
         <span class="by">by</span>
         Amanda Artberger
-        <a href="#" class="tiktok">🤳</a>
+        <!--<a href="#" class="tiktok">🤳</a>-->
       </li>
 
       <li><a href="https://goodtimes.computer">goodtimes.computer</a><br>
         <span class="by">by</span>
         Andy Voitka
-        <a href="#" class="tiktok">🤳</a>
+        <a href="https://vm.tiktok.com/ZMYAFG1gD/" class="tiktok">🤳</a>
       </li>
 
       <li><a href="https://identity.rodeo">identity.rodeo</a><br>
         <span class="by">by</span>
         Adam Arinbjarnarson
-        <a href="#" class="tiktok">🤳</a>
+        <a href="https://vm.tiktok.com/ZMYAYLXdW/" class="tiktok">🤳</a>
+        <a href="https://vm.tiktok.com/ZMYAYNYx4/" class="tiktok">🤳</a>
       </li>
 
       <li><a href="https://insta-killer.click">insta-killer.click</a><br>
         <span class="by">by</span>  Jonatan Modin
-        <a href="#" class="tiktok">🤳</a>
+        <a href="https://www.tiktok.com/@beckmanscollegeofdesign/video/7203310731549297926" class="tiktok">🤳</a>
+        <a href="https://www.tiktok.com/@beckmanscollegeofdesign/video/7203310513307110661" class="tiktok">🤳</a>
       </li>
 
-      <li><a href="https://lovelovelovelovelovelovelovelovelovelovelovelove-love-love-love.me">
+      <li><a href="http://lovelovelovelovelovelovelovelovelovelovelovelove-love-love-love.me">
         lovelovelovelovelovelovelovelove<br>
         lovelovelovelove-love-love-love.me</a>
        <br>
        <span class="by">by</span>  Sofia Di Marco
-       <a href="#" class="tiktok">🤳</a>
+       <a href="https://vm.tiktok.com/ZMYAY9MCh/" class="tiktok">🤳</a>
      </li>
 
       <li><a href="https://metaverse-room.tv">metaverse-room.tv</a><br> <span class="by">by</span>
         Elvin Odelholm
-        <a href="#" class="tiktok">🤳</a>
+        <a href="https://vm.tiktok.com/ZMYAYv5jK/" class="tiktok">🤳</a>
       </li>
       <li><a href="https://microwa.it">microwa.it</a><br> <span class="by">by</span>
         Solvej Jansson
-        <a href="#" class="tiktok">🤳</a>
+        <a href="https://vm.tiktok.com/ZMYAF4ed5/" class="tiktok">🤳</a>
+        <a href="https://vm.tiktok.com/ZMYAFmxLh/" class="tiktok">🤳</a>
       </li>
-      <li><a href="https://nakedtruth.exposed">nakedtruth.exposed</a><br> <span class="by">by</span>
-        Emilia Lind
-        <a href="#" class="tiktok">🤳</a>
-      </li>
-      <li>
-        <a href="https://radio.stund.nu">radio.stund.nu</a><br> <span class="by">by</span>
-        Frank Torsson Szyber</li>
 
-      <li><a href="https://the-kingdom-made-of-co.de">the-kingdom-made-of-co.de</a><br>
+      <li>
+        <a href="https://nakedtruth.exposed">nakedtruth.exposed</a><br>
+        <span class="by">by</span>
+        Emilia Lind
+        <a href="https://vm.tiktok.com/ZMYAYUJhh/" class="tiktok">🤳</a>
+      </li>
+
+      <li>
+        <a href="https://radio.stund.nu">radio.stund.nu</a><br>
+        <span class="by">by</span>
+        Frank Torsson Szyber
+        <a href="https://vm.tiktok.com/ZMYAYSnax/" class="tiktok">🤳</a>
+      </li>
+
+      <li>
+        <a href="https://the-kingdom-made-of-co.de">the-kingdom-made-of-co.de</a><br>
         <span class="by">by</span>
         Gabriella Roos Redemo
-        <a href="#" class="tiktok">🤳</a>
+        <!--<a href="#" class="tiktok">🤳</a>-->
       </li>
 
       <li><a href="https://www.thethreeeyes.com/">thethreeeyes.com</a><br>
         <span class="by">by</span>
         Noah Constantinou
-        <a href="#" class="tiktok">🤳</a>
+        <a href="https://www.tiktok.com/@beckmanscollegeofdesign/video/7203285236044582150" class="tiktok">🤳</a>
       </li>
 
       <hr>
@@ -297,9 +341,14 @@
     <div id="footer">
 
       <p>
-      16 Single Serving Sites by  the first year students at <a href="https://www.beckmans.se">Beckmans Collage of Design</a>,
-      based on Wikipedia articles linking to its <a href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Social_media">Social Media</a> page. The SSS:s are made in the <i>Interactive Design 1</i> course,
-      supervised by senior lecturer <a href="https://harald.peter.stream">Peter Ström</a>.
+      This website contains links to 16 <a href="https://en.wikipedia.org/wiki/Single-serving_site">Single serving sites</a>,
+      connected as a <a href="https://en.wikipedia.org/wiki/Webring">Webring</a>,
+        made in February 2023 by the students in Interactive Design 1 at the Visual Communication program at
+      <a href="https://www.beckmans.se">Beckmans Collage of Design</a> in Stockholm, Sweden.
+
+  The sites take their starting points in Wikipedia articles linking to the <a href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Social_media">Social Media</a> page.  Next to each link, there is 1 or 2 links to promotional or explanatory TikToks (🤳).
+
+      The course is supervised by senior lecturer <a href="https://harald.peter.stream">Peter Ström</a>.
       </p>
 
       <hr>
